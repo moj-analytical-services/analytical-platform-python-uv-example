@@ -4,7 +4,8 @@ ENV UV_COMPILE_BYTECODE=1
 
 RUN --mount=type=bind,source=pyproject.toml,target=pyproject.toml \
     --mount=type=bind,source=uv.lock,target=uv.lock \
-    uv sync
+    uv sync \
+    uv pip list
 
 # Execute main.py script
 # ENTRYPOINT ["python3", "main.py"]
