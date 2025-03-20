@@ -32,4 +32,4 @@ jobs:
       - name: Run
         id: run
         run: |
-          docker run -it --rm ${{ github.repository }}:${{ github.sha }}
+          docker run ${{ github.repository }}:${{ github.sha }}
