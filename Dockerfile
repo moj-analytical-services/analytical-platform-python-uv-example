@@ -4,7 +4,7 @@ ENV UV_COMPILE_BYTECODE=1
 
 RUN --mount=type=bind,source=pyproject.toml,target=pyproject.toml \
     --mount=type=bind,source=uv.lock,target=uv.lock \
-    <<EOF
+<<EOF
     uv sync --frozen
     uv pip list
 EOF
