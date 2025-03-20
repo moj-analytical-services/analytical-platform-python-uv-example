@@ -2,10 +2,12 @@ FROM ghcr.io/ministryofjustice/analytical-platform-airflow-python-base:1.8.0@sha
 
 ENV UV_COMPILE_BYTECODE=1
 
-RUN --mount=type=bind,source=pyproject.toml,target=pyproject.toml \
-    --mount=type=bind,source=uv.lock,target=uv.lock \
-    uv sync \
-    uv pip list
+RUN <<EOF
+uv sync --frozen
+
+uv pip list
+EOF --mount=type=bind,source=pyproject.toml,target=pyproject.toml \
+    --mount=type=bind,source=uv.lock,target=uv.lock
 
 # Execute main.py script
 # ENTRYPOINT ["python3", "main.py"]
