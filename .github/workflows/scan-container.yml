@@ -13,6 +13,6 @@ jobs:
     permissions:
       contents: read
       pull-requests: write
-    uses: ministryofjustice/analytical-platform-airflow-github-actions/.github/workflows/shared-scan-container.yml@c5e5677a7f4f9f65829996f00106c792610facfa # v1.4.1
+    uses: ministryofjustice/analytical-platform-airflow-github-actions/.github/workflows/shared-scan-container.yml@8ea97a736df324821cbf5676c5f36c8f8188772a # v1.6.0
     with:
       runtime: python
