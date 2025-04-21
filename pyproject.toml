@@ -5,6 +5,6 @@ description = "Analytical Platform Python uv Example"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "boto3==1.37.28",
+    "boto3==1.37.38",
     "notifications-python-client==10.0.1",
 ]
