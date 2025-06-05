@@ -1,0 +1,5 @@
+---
+- scope: moj-analytical-services/octo-sts-1
+  identity: analytical-platform-python-uv-example
+- scope: moj-analytical-services/octo-sts-2
+  identity: analytical-platform-python-uv-example
