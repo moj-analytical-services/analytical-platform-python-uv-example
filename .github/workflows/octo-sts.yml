@@ -25,3 +25,5 @@ jobs:
       - name: Octo STS
         id: octo_sts
         uses: ministryofjustice/analytical-platform-airflow-github-actions/octo-sts@octo-sts # octo-sts
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
