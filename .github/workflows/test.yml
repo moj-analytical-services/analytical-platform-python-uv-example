@@ -24,7 +24,7 @@ jobs:
 
       - name: Octo STS
         id: octo_sts
-        uses: ministryofjustice/analytical-platform-airflow-github-actions/octo-sts@octo-sts # octo-sts
+        uses: ministryofjustice/analytical-platform-github-actions/octo-sts@feat/octo-sts # TEST
 
       - name: Build
         id: build
