@@ -1,0 +1,17 @@
+[
+  {
+    "scope": "moj-analytical-services/octo-sts-1",
+    "identity": "analytical-platform-python-uv-example",
+    "branch": "main"
+  },
+  {
+    "scope": "moj-analytical-services/octo-sts-2",
+    "identity": "analytical-platform-python-uv-example",
+    "branch": "main"
+  },
+  {
+    "scope": "ministryofjustice/octo-sts-test",
+    "identity": "moj-analytical-services-analytical-platform-python-uv-example",
+    "branch": "main"
+  }
+]
