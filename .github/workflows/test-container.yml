@@ -13,6 +13,6 @@ jobs:
     permissions:
       contents: read
       pull-requests: write
-      # id-token: write
+      id-token: write
     # uses: ministryofjustice/analytical-platform-airflow-github-actions/.github/workflows/shared-test-container.yml@2535a999924998baeb46c740720a61523ca8efa9 # v1.11.0
     uses: ministryofjustice/analytical-platform-airflow-github-actions/.github/workflows/shared-test-container.yml@octo-sts # octo-sts
