@@ -12,9 +12,7 @@ jobs:
   scan-container:
     permissions:
       contents: read
-      id-token: write
       pull-requests: write
-    # uses: ministryofjustice/analytical-platform-airflow-github-actions/.github/workflows/shared-test-container.yml@2535a999924998baeb46c740720a61523ca8efa9 # v1.11.0
-    uses: ministryofjustice/analytical-platform-airflow-github-actions/.github/workflows/shared-test-container.yml@octo-sts # octo-sts
+    uses: ministryofjustice/analytical-platform-airflow-github-actions/.github/workflows/shared-scan-container.yml@2535a999924998baeb46c740720a61523ca8efa9 # v1.11.0
     with:
       runtime: python
