@@ -10,7 +10,7 @@
     "branch": "main"
   },
   {
-    "scope": "github.com/ministryofjustice/octo-sts-test",
+    "scope": "ministryofjustice/octo-sts-test",
     "identity": "moj-analytical-services-analytical-platform-python-uv-example",
     "branch": "main"
   }
