@@ -10,8 +10,6 @@ RUN --mount=type=bind,source=pyproject.toml,target=pyproject.toml \
     --mount=type=bind,source=uv.lock,target=uv.lock \
 <<EOF
 uv sync --frozen --no-dev --no-editable --no-install-project
-
-cat octo-sts-1/README.md
 EOF
 
 ENTRYPOINT ["uv", "run", "main.py"]
